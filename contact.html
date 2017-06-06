@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="Acctwell" content="The affordable payroll service for your growing business.">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+      <!-- <link rel="stylesheet" href="resources/css/style.css"> -->
+      <link rel="stylesheet" href="styles/main.css">
+      <title>Acctwell</title>
+
+      <link rel="apple-touch-icon" sizes="180x180" href="resources/icons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" href="resources/icons/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="resources/icons/favicon-16x16.png" sizes="16x16">
+      <link rel="manifest" href="resources/icons/manifest.json">
+      <link rel="mask-icon" href="resources/icons/safari-pinned-tab.svg" color="##25a25a">
+      <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top acctwell-nav">
+          <div class="container">
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand acctwell-brand" href="index.html"><img class="navbar-logo" src="resources/img/Acctwell-logo.svg">Acctwell Inc</a>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto navigation">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="services.html">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="map-section-header">
+                    <h2 class="page-heading">Come See Us</h2>
+                </div>
+                <div class="map-section-content">
+                    <div id="map" class="map"></div>
+                    <h3>
+                        <p>9229 QUEENS BLVD,</p>
+                        <p>Suite CC</p>
+                        <p>Rego Park, NY 11374</p>
+                    </h3>
+                    <h3>
+                        <p>Monday - Friday</p>
+                        <p>9:00 AM - 6:00 PM</p>
+                    </h3>
+                    <h3>
+                        <p>(718) 897-1111</p>
+                    </h3>
+                    <script>
+                        function initMap() {
+                            var uluru = {lat: 40.732666, lng: -73.866918};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 16,
+                                center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                        }
+                    </script>
+                </div>
+                <div class="contact-section-header">
+                    <h2 class="page-heading">Leave a Message</h2>
+                </div>
+                <div class="contact-section-content">
+                    <div class="row">
+                        <div class="col-sm-8 offset-sm-2">
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Name" id="name-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="search" placeholder="E-mail" id="email-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Message" id="message-input" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn submit-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Acctwell PayRoll Services</h3>
+                        <p>OFFICE HOURS:</p>
+                        <p>Monday - Friday</p>
+                        <p>9:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="col-md-4 offset-md-4">
+                        <p>9229 Queens Blvd,</p>
+                        <p>Suite CC</p>
+                        <p>Rego Park, NY 11374</p>
+                        <br>
+                        <p>Phone: (718) 897-1111</p>
+                        <p>Fax: (718) 830-0022</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&#169; 2017 Acctwell Incorporated</p>
+                </div>
+            </div>
+        </footer>
+
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOGpl06hZ9FF17wDHuXoOwcUxGPxL6bSw&callback=initMap">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script src="resources/js/app.js"></script>
+
+    </body>
+</html>
